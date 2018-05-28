@@ -1,0 +1,73 @@
+<script type="text/javascript">
+		 
+			$(function() {
+			 
+				$(window).scroll(function() {
+				 
+				if($(this).scrollTop() != 0) {
+				 
+				$('#toTop').fadeIn();
+				 
+				} else {
+				 
+				$('#toTop').fadeOut();
+				 
+				}
+				 
+				});
+				 
+				$('#toTop').click(function() {
+				 
+				$('body,html').animate({scrollTop:0},800);
+				 
+				});
+				 
+			});
+		
+		</script>
+
+
+
+
+
+
+
+
+
+/*---------------------------------*/
+css
+
+#toTop {
+width:100px;
+border:1px solid #ccc;
+background:#00C8CC;
+text-align:center;
+padding:4px;
+position:fixed;
+bottom:30px; /* отступ кнопки от нижнего края страницы*/
+right:10px;
+cursor:pointer;
+display:none;
+color:white;
+font-family:Intro, Myriad pro, sans-serif;
+font-size:15px;
+border-radius: 5px
+}
+
+
+/*---------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*hml*/
+<div id="toTop"><h1>вверх</h1></div>

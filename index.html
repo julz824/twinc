@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main Twinc</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="catalogue/css/animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Almendra+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai:100" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=BenchNine:300" rel="stylesheet">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="js/jquery.min.js"></script>
+			<script type="text/javascript">
+				
+			$(function() {
+			 
+				$(window).scroll(function() {
+				 
+				if($(this).scrollTop() != 0) {
+				 
+				$('#toTop').fadeIn();
+				 
+				} else {
+				 
+				$('#toTop').fadeOut();
+				 
+				}
+				 
+				});
+				 
+				$('#toTop').click(function() {
+				 
+				$('body,html').animate({scrollTop:0},800);
+				 
+				});
+				 
+			});
+		</script>
+
+	<script>
+		 
+			$(document).ready(function(){
+			$("#navbar").on("click","a", function (event) {
+				event.preventDefault();
+				var id  = $(this).attr('href'),
+					top = $(id).offset().top;
+				$('body,html').animate({scrollTop: top}, 2500);
+			});
+		});
+	</script>
+
+	<script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+
+</head>
+
+<body>
+	<header>
+		<div id="logo1">
+    		<a href="index.html">
+      			<h4>TWINC</h4>
+    		</a>
+		</div>
+	<menu>
+		<ul>
+			<li><a href="#footer">CONTACTS</a></li>
+			<li><a href="#aboutus">ABOUT US</a></li>
+			<li><a href="catalogue/catalogue.html">CATALOGUE</a></li>
+			<li><a href="gallery.html">GALLERY</a></li>
+			<li><a href="index.html">HOME</a></li>
+		</ul>
+	</menu>
+	</header>
+
+	<div class="Home">
+		<div id="Text">
+			<h1 class="wow bounceInRight">TWINC</h1>  
+			<h2>ITALIAN FURNITURE <br/>ONLINE CATALOGUE</h2>
+			<div id="watch"> <a href="catalogue/catalogue.html">WATCH NOW!</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="f wow zoomInDown">	
+		<img src="images/price.png" alt="5">
+	<form id="application" action=" application.php" method="POST" name=" application ">
+   <input name="name" id="applicationName" smaxlength="20" placeholder="NAME" required />
+   <input name="email" type="email" id="applicationEmail" maxlength="20" placeholder="EMAIL ADRESS" required />
+   <input name="telephone" type="Tel" id="applicationTelephone" maxlength="20" placeholder="PHONE NUMBER" required/>
+   <button class="applicationButton" type="submit" form="application">GET A PRICE</button>
+</form>
+</div>
+
+<div class="photo1"></div>
+
+<div  id="aboutus">
+<br>
+<h2 class="wow bounceInRight">About TWINC</h2>
+<br>
+<p class="wow bounceInLeft">Founded in 1966 with the entrepreneurial vision of Piero Ambrogio Busnelli, TWINC is a leading Italian company in the international world of designer furniture for both home (TWINC Italia Home Division) and contract (TWINC Italia Contract Division).
+The company distinguished itself from its inception for its innovative industrial approach to manufacturing in contrast to the small traditional artisan competitors typical of the sector. Based in Novedrate (Como), north of Milan, the firm’s prestigious headquarters were designed by Renzo Piano and Richard Rogers in 1972. TWINC Italia’s products have contributed to the history of Italian design. A history based on technology, creativity, and that inherent style that has made Italy famous throughout the world , establishing the “Made in Italy” brand that has been exported to international markets. The TWINC Italia furniture collection has its roots in its ability to reflect contemporary culture and the capacity to respond quickly to the ever changing lifestyles, habits and requirements. Modern furniture elements that are distinctive and characterised by exceptional quality and timeless elegance. The result of the unique union between creativity, innovation and industrial know-how.
+</p>
+<br><br>
+</div>
+
+
+<div id="weareimages">
+	<img src="images/10.jpg" alt="23" class="wow zoomIn">
+</div>
+<div class="weare wow zoomInDown">
+	<br>
+	
+	<h2>WHO WE ARE</h2>
+<p>Wholesale and Distributors of Modern and Contemporary Furniture in the USA and Europe
+TWINC Furniture, Inc. is a wholesale center for home furniture inspired by European design. Our stylish merchandise combines timeless elegance, competitive pricing and quality craftsmanship. We represent the best European Inspired furniture manufacturers, many of them on an exclusive basis. TWINC Furniture, Inc. offers a range of mid to high end contemporary, transitional and traditional home furniture that is recognized for its innovative design, functionality and, above all, competitive pricing.</p>
+<br>
+<br>
+<br>
+
+
+<h2>WHAT WE OFFER</h2>
+<p>TWINC Furniture provides wholesale furniture for interior designers, real-estate developers, furniture stores, and online retailers. Our experience lets us offer world wide access to our furniture with many advantages such as:
+
+TWINC Furniture Company Information
+A wide range of mid-level to high-end furnishings
+No minimum warehouse order requirements
+Constantly updated website of products we carry
+Quick-ship from Los Angeles, New York, and Miami
+Reliable customer service and smooth ordering process
+In-stock items ready for delivery. Introducing B2B Flat Rate Shipping Program
+TWINC Furniture has recently partnered up with Trail Lines Freight to implement a new business-to-business flat rate shipping program.
+
+From now on our customers can choose a program below to ship merchandise from TWINC Facilities in Southern California to their own warehouse or store. This program is created to facilitate unnecessary complicated shipping process for our clients. Minimum order amount for these freight rates is $2,000. Please see the tariff map and start using it today!</p>
+
+<div class="knopki">
+	<div id="dealer">BECOME A DEALER</div>
+	<p>OR</p>
+	<div id="dealer2">FIND A STORE</div>
+</div>
+
+</div>
+
+<div id="photo2"></div>
+
+<div class="why wow zoomIn">
+	<img src="images/w.png" alt="why choose us">
+</div>
+
+
+<div id="footer">
+	<div id="txtf">
+		<div id="t1">
+			<p> <h3>Contact Information</h3>
+ 				Address:
+				3251 E Slauson Ave
+				View locations</p>
+		</div>
+ 	<div id="t2">
+ 		<h3>Phone:</h3>
+		<p>(323) 570-0061</p>
+	</div>
+ 	<div id="t3">
+ 		<h3>Support Days/ Hours:</h3>
+		<p>Mon - Fri / 9:00AM - 5:30PM PST</p>
+	</div>
+ 	<div id="t4">
+ 		<h3>Dock Days/ Hours:</h3>
+		<p>Mon - Fri / 9:00AM - 4:30PM PST</p>
+	</div>
+	<div id="t5">
+		<h3>What We Offer</h3>
+		<p>Over 6000 items in stock everyday<br>
+		Direct containers from China or Italy<br>
+		Mixed containers from LA and Miami<br>
+		Drop ship from our warehouses<br>
+		Designers and online retailer friendly<br>
+		Work With Us<br>
+		Become an authorized TWINC dealer and sell to your clients.</p>
+		</div>
+	<div id="logof">
+    	<a href="index.html">
+      		<h4>TWINC </h4><p>italian furniture</p>
+    	</a>
+	</div>
+	
+		<div id="shares">
+		<a href="facebook"> <img src="images/facebook.png" alt="7" width="40px" height="40px"></a>
+		<a href="instagram"> <img src="images/instagram.png" alt="8" width="40px" height="40px"></a>
+		<a href="linkedin"> <img src="images/linkedin.png" alt="9" width="40px" height="40px"></a>
+		<a href="youtube"> <img src="images/youtube.png" alt="10" width="40px" height="40px"></a>
+	</div>
+</div>
+
+</div>
+
+<div id="toTop">
+	<img src="images/toTop.png" alt="4" width="80px" height="80px">
+</div>
+	
+
+
+</body>
+</html>
